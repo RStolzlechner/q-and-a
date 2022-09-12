@@ -1,3 +1,5 @@
+#!usr/bin/python3
+
 import json
 import sys
 from q_a_model import QAModel
@@ -31,7 +33,7 @@ else:
     for q_a in json_list:
         q_a_list.append(QAModel(**q_a))
 
-    q_a_list.sort(key=lambda x: x.weight, reverse=True)
+    q_a_list.sort(key=lambda x: x.weight, reverse=False)
 
     # Ask first 10 question
     cnt = 1
