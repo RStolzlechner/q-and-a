@@ -1,6 +1,7 @@
 import math
 from random import random
 
+#com
 class QAModel(object):
     def __init__(self, id, question, answer, ok):
         self.id = id
