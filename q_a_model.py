@@ -8,4 +8,4 @@ class QAModel(object):
         self.question = question
         self.answer = answer
         self.ok = ok
-        self.weight = math.floor((1+ok) * 100 * random())
+        self.weight = (1+ok) * random()
