@@ -9,7 +9,8 @@ with open("./data/courses.json") as course_file:
     courses = json.load(course_file)
 
 for course in courses:
-    print(course['id'], ": ", course['name'])
+    if not course['finished']:
+        print(course['id'], ": ", course['name'])
 
 course_id = input("Kurs Id waehlen: ")
 
