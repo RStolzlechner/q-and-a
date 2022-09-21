@@ -8,11 +8,16 @@ from q_a_model import QAModel
 with open("./data/courses.json") as course_file:
     courses = json.load(course_file)
 
+open_courses = []
 for course in courses:
     if not course['finished']:
+        open_courses.append(course)
         print(course['id'], ": ", course['name'])
 
-course_id = input("Kurs Id waehlen: ")
+if len(open_courses) == 1:
+    course_id = open_courses[0]['id']
+else:
+    course_id = input("Kurs Id waehlen: ")
 
 with open("./data/%s.json" % course_id) as q_a_file:
     json_list = json.load(q_a_file)
