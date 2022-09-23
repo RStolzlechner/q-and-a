@@ -2,11 +2,16 @@
     {
         "id": 1697,
         "name": "Mensch Computer Interaktion",
-        "finished": false
+        "finished": true
     },
     {
         "id": 1866,
         "name": "Sicherheit im Internet",
         "finished": true
+    },
+    {
+        "id": 1727,
+        "name": "Parallele Programmierung und Grid Computing",
+        "finished": false
     }
 ]
